@@ -11,6 +11,7 @@
     <CurlDir>C:\GitHub\curl</CurlDir>
     <CurlIncludeDir>$(CurlDir)\include</CurlIncludeDir>
     <CurlLibDir>$(CurlDir)\builds\libcurl-vc12-$(PlatformTarget)-release-dll-ipv6-sspi-winssl\lib</CurlLibDir>
+    <VSS_SDK_DIR>C:\Program Files (x86)\Microsoft\VSSSDK72</VSS_SDK_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup />
@@ -41,6 +42,9 @@
     </BuildMacro>
     <BuildMacro Include="CurlLibDir">
       <Value>$(CurlLibDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="VSS_SDK_DIR">
+      <Value>$(VSS_SDK_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
